@@ -1,0 +1,45 @@
+.gameplay-section {
+  background: #503618;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-section-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    max-width: 1440px;
+  }
+}
+
+.gameplay-container {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-title {
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}

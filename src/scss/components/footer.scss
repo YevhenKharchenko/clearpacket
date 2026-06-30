@@ -1,0 +1,145 @@
+.footer {
+  background: #503618;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-bg-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include media(desktop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.footer-container {
+  padding: 0 16px;
+
+  @include media(desktop) {
+    padding: 0 152px;
+  }
+}
+
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 192px;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-list-item {
+  &:first-child {
+    position: relative;
+
+    &::after {
+      content: '|';
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.28571;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -16px;
+    }
+  }
+
+  @include media(desktop) {
+    &:first-child {
+      &::after {
+        font-size: 18px;
+        line-height: 1.33333;
+      }
+    }
+  }
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+}
+
+.footer-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @include media(desktop) {
+    justify-content: center;
+    gap: 192px;
+    max-width: max-content;
+  }
+}
+
+.footer-email-link {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+}
+
+.footer-text {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+}

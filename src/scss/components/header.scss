@@ -1,0 +1,147 @@
+.header {
+  background: #acffa8;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+  }
+}
+
+.header-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.header-bg-wrapper {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.header-container {
+  @include media(desktop) {
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media(desktop) {
+    justify-content: start;
+  }
+}
+
+.header-logo-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.header-logo-img {
+}
+
+.header-logo-text {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #010101;
+
+  @include media(desktop) {
+  }
+}
+
+.nav-list {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-left: auto;
+  }
+}
+
+.nav-list-item {
+}
+
+.nav-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #010101;
+  transition: color 0.3s ease-in-out;
+
+  &:hover,
+  &.active {
+  }
+}
+
+.header-cta-link {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #503618;
+    border-radius: 24px;
+    padding: 10px 24px;
+    margin-left: 56px;
+  }
+}
+
+.header-cta-icon {
+  @include media(desktop) {
+    min-width: 16px;
+  }
+}
+
+.header-cta-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #fff;
+  min-width: 216px;
+  max-width: max-content;
+
+  @include media(desktop) {
+  }
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  stroke: #010101;
+}

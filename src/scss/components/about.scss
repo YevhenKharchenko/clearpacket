@@ -1,0 +1,45 @@
+.about-section {
+  background: #503618;
+
+  @include media(desktop) {
+  }
+}
+
+.about-section-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    max-width: 1440px;
+  }
+}
+
+.about-container {
+  @include media(desktop) {
+  }
+}
+
+.about-title {
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.about-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}

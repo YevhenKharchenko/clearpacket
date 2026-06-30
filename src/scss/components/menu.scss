@@ -1,0 +1,125 @@
+.context-menu {
+  background: #acffa8;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  height: 100%;
+  overflow-y: auto;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.context-container {
+  padding: 0 25px;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 70px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.close-icon {
+  stroke: #000;
+}
+
+.context-nav {
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.context-list-item {
+}
+
+.context-list-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #010101;
+  transition: color 0.3s ease-in-out;
+
+  &:active {
+  }
+}
+
+.context-cta-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #503618;
+  border-radius: 24px;
+  padding: 10px 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+
+  @include media(desktop) {
+  }
+}
+
+.context-cta-icon {
+  min-width: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.context-cta-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #fff;
+  min-width: 216px;
+  max-width: max-content;
+
+  @include media(desktop) {
+  }
+}
+
+.is-open {
+  display: flex;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
