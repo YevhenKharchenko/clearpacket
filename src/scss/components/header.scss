@@ -1,5 +1,5 @@
 .header {
-  background: #acffa8;
+  background: #000016;
   position: fixed;
   width: 100%;
   top: 0;
@@ -15,19 +15,24 @@
 }
 
 .header-bg-wrapper {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
+    padding-top: 11px;
+    padding-bottom: 11px;
     max-width: 1440px;
   }
 }
 
 .header-container {
+  padding: 0 40px;
+
   @include media(desktop) {
+    padding: 0 76px;
   }
 }
 
@@ -37,7 +42,6 @@
   justify-content: space-between;
 
   @include media(desktop) {
-    justify-content: start;
   }
 }
 
@@ -46,25 +50,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4px;
 
   @include media(desktop) {
   }
 }
 
 .header-logo-img {
-}
-
-.header-logo-text {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33333;
-  text-align: center;
-  color: #010101;
-
-  @include media(desktop) {
-  }
 }
 
 .nav-list {
@@ -74,8 +65,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
-    margin-left: auto;
+    gap: 30px;
   }
 }
 
@@ -86,11 +76,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 1.33333;
-  color: #010101;
+  text-align: center;
+  color: #fff;
   transition: color 0.3s ease-in-out;
 
   &:hover,
@@ -104,31 +94,16 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 8px;
-    background: #503618;
-    border-radius: 24px;
-    padding: 10px 24px;
-    margin-left: 56px;
-  }
-}
-
-.header-cta-icon {
-  @include media(desktop) {
-    min-width: 16px;
-  }
-}
-
-.header-cta-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.42857;
-  text-align: center;
-  color: #fff;
-  min-width: 216px;
-  max-width: max-content;
-
-  @include media(desktop) {
+    justify-content: center;
+    background: linear-gradient(133deg, #fb6cc3 0%, #ee46b1 100%);
+    border: 2px solid #930d6f;
+    border-radius: 20px;
+    padding: 4px 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    max-width: max-content;
   }
 }
 
@@ -143,5 +118,5 @@
 }
 
 .menu-icon {
-  stroke: #010101;
+  stroke: #fff;
 }
