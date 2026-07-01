@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Clear Grid - Color Box Puzzle - Drag, Merge, and Solve Colorful Puzzles
+    </title>
+    <meta
+      name="description"
+      content="Clear Grid - Color Box Puzzle is an exciting drag-and-merge puzzle game where you match and merge colorful blocks to solve puzzles and clear the grid. Enjoy hours of fun and improve your logic skills."
+    />
+    <meta
+      name="keywords"
+      content="color box puzzle, drag and merge puzzle, block puzzle, color puzzle, IQ puzzle game, logic puzzle, offline puzzle game, free puzzle game, fun block puzzle"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="/clearpacket/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/clearpacket/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/clearpacket/assets/vendor-1c26c47f.js">
+    <link rel="stylesheet" href="/clearpacket/assets/vendor-fb046256.css">
+    <link rel="stylesheet" href="/clearpacket/assets/styles-1746464b.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-wrapper">
+    <div class="header-bg-wrapper">
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="./index.html" class="header-logo-link">
+            <picture>
+              <source
+                srcset="/clearpacket/assets/header-logo-desk-768c89c2.png "
+                media="(min-width: 1440px)"
+                width="100"
+                height="59"
+              />
+              <source
+                srcset="/clearpacket/assets/header-logo-mob-7f4ba3f8.png "
+                width="75"
+                height="44"
+              />
+              <img
+                class="header-logo-img"
+                src="/clearpacket/assets/header-logo-mob-7f4ba3f8.png"
+                alt="Logo"
+                width="75"
+                height="44"
+              />
+            </picture>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#home">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#gameplay">Gameplay</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#features">Features</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#about">Challenges</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#cta">Contact</a>
+            </li>
+          </ul>
+          <a
+            class="header-cta-link"
+            href="https://play.google.com/store/apps/details?id=com.serialcloud.cleargrid"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Start Playing</a
+          >
+          <button class="nav-btn" type="button" aria-label="Open mobile menu">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="/clearpacket/assets/sprite-64b35890.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <div class="container context-container">
+    <button class="close-btn" type="button" aria-label="Close mobile menu">
+      <svg class="close-icon" width="24" height="24">
+        <use href="/clearpacket/assets/sprite-64b35890.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="context-nav">
+      <ul class="context-nav-list">
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gameplay">Gameplay</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#features">Features</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#about">Challenges</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#cta">Contact</a>
+        </li>
+      </ul>
+      <a
+        class="context-cta-link"
+        href="https://play.google.com/store/apps/details?id=com.serialcloud.cleargrid"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Start Playing</a
+      >
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-wrapper">
+          <h1 class="hero-title">Clear the Grid, Enjoy the Glow!</h1>
+          <p class="hero-text">
+            Been hooked on this Clear Grid game recently - those bright blocks
+            are weirdly addictive, and you actually have to think about your
+            moves. Solve puzzles by merging colorful blocks, and watch as the
+            grid clears before your eyes. Looks simple enough but then you're
+            sitting there for 10 minutes trying to figure out one level. Let's
+            see what you've got.
+          </p>
+          <a
+            class="hero-btn"
+            target="_blank"
+            href="https://play.google.com/store/apps/details?id=com.serialcloud.cleargrid"
+            rel="noopener noreferrer"
+            aria-label="Download on Google Play"
+            >Play Now</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gameplay-section section" id="gameplay">
+  <div class="gameplay-section-wrapper">
+    <div class="container gameplay-container">
+      <h2 class="section-title gameplay-title">
+        Get Really Good at Matching These Color Blocks
+      </h2>
+      <p class="gameplay-top-text">
+        Clear Grid's pretty easy to learn, but don't be fooled - it gets
+        challenging real quick. Here's how it works:
+      </p>
+      <div class="gameplay-swiper-container">
+        <ul class="swiper-wrapper gameplay-swiper-wrapper">
+          <li class="swiper-slide gameplay-list-item">
+            <div class="gameplay-item-bg"></div>
+            <div class="gameplay-item-content-wrapper">
+              <picture>
+                <source
+                  srcset="/clearpacket/assets/gameplay-img1-desk-548da85f.png "
+                  media="(min-width: 1440px)"
+                  width="187"
+                  height="187"
+                />
+                <source
+                  srcset="/clearpacket/assets/gameplay-img1-mob-98d8a643.png "
+                  width="138"
+                  height="138"
+                />
+                <img
+                  class="gameplay-img"
+                  src="/clearpacket/assets/gameplay-img1-mob-98d8a643.png"
+                  alt="Screenshot of the game"
+                  width="138"
+                  height="138"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="gameplay-item-text-wrapper">
+                <h3 class="gameplay-item-title">Drag and Merge:</h3>
+                <p class="gameplay-item-text">
+                  Match similar blocks by dragging them into the correct
+                  positions to create combinations.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide gameplay-list-item">
+            <div class="gameplay-item-bg"></div>
+            <div class="gameplay-item-content-wrapper">
+              <picture>
+                <source
+                  srcset="/clearpacket/assets/gameplay-img2-desk-d5701a7f.png "
+                  media="(min-width: 1440px)"
+                  width="187"
+                  height="187"
+                />
+                <source
+                  srcset="/clearpacket/assets/gameplay-img2-mob-0988f8d2.png "
+                  width="138"
+                  height="138"
+                />
+                <img
+                  class="gameplay-img"
+                  src="/clearpacket/assets/gameplay-img2-mob-0988f8d2.png"
+                  alt="Screenshot of the game"
+                  width="138"
+                  height="138"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="gameplay-item-text-wrapper">
+                <h3 class="gameplay-item-title">Clear the Grid:</h3>
+                <p class="gameplay-item-text">
+                  When you match them right, they just disappear - super
+                  satisfying - and then more blocks drop down.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide gameplay-list-item">
+            <div class="gameplay-item-bg"></div>
+            <div class="gameplay-item-content-wrapper">
+              <picture>
+                <source
+                  srcset="/clearpacket/assets/gameplay-img3-desk-582f0034.png "
+                  media="(min-width: 1440px)"
+                  width="187"
+                  height="187"
+                />
+                <source
+                  srcset="/clearpacket/assets/gameplay-img3-mob-d02a3ae1.png "
+                  width="138"
+                  height="138"
+                />
+                <img
+                  class="gameplay-img"
+                  src="/clearpacket/assets/gameplay-img3-mob-d02a3ae1.png"
+                  alt="Screenshot of the game"
+                  width="138"
+                  height="138"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="gameplay-item-text-wrapper">
+                <h3 class="gameplay-item-title">Level Up:</h3>
+                <p class="gameplay-item-text">
+                  Unlock new stages with more complex and creative block
+                  arrangements to solve.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="controls gameplay-controls">
+        <button
+          class="arrow-btn"
+          id="gameplayLeftArrow"
+          aria-label="Previous slide"
+        >
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/clearpacket/assets/sprite-64b35890.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <div class="dots">
+          <div class="gameplay-dot active"></div>
+          <div class="gameplay-dot"></div>
+          <div class="gameplay-dot"></div>
+        </div>
+        <button
+          class="arrow-btn"
+          id="gameplayRightArrow"
+          aria-label="Next slide"
+        >
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/clearpacket/assets/sprite-64b35890.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="gameplay-bottom-list">
+        <li class="gameplay-bottom-list-item">
+          <div class="gameplay-bottom-item-bg"></div>
+          <div class="gameplay-bottom-item-content-wrapper">
+            <svg class="gameplay-icon" width="30" height="30">
+              <use href="/clearpacket/assets/sprite-64b35890.svg#icon-gameplay1"></use>
+            </svg>
+            <p class="gameplay-bottom-item-text">
+              The controls are dead simple - just drag stuff around - but I
+              swear this game has some kind of spell on it because I always end
+              up playing way longer than I planned.
+            </p>
+          </div>
+        </li>
+        <li class="gameplay-bottom-list-item">
+          <div class="gameplay-bottom-item-bg"></div>
+          <div class="gameplay-bottom-item-content-wrapper">
+            <svg class="gameplay-icon" width="30" height="30">
+              <use href="/clearpacket/assets/sprite-64b35890.svg#icon-gameplay2"></use>
+            </svg>
+            <p class="gameplay-bottom-item-text">
+              Hundreds of challenging levels to keep you entertained
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="features-section section" id="features">
+  <div class="features-section-wrapper">
+    <div class="container features-container">
+      <h2 class="section-title features-title">
+        Tons of Fun, So Many Ways to Play
+      </h2>
+      <p class="features-top-text">
+        Here’s why Clear Grid - Color Box Puzzle is the perfect game for
+        relaxation and getting your brain working:
+      </p>
+      <div class="features-swiper-container">
+        <ul class="swiper-wrapper features-swiper-wrapper">
+          <li class="swiper-slide features-list-item">
+            <div class="features-item-bg"></div>
+            <div class="features-item-content-wrapper">
+              <picture>
+                <source
+                  srcset="/clearpacket/assets/features-img1-desk-5a7cdac1.png "
+                  media="(min-width: 1440px)"
+                  width="137"
+                  height="137"
+                />
+                <source
+                  srcset="/clearpacket/assets/features-img1-mob-7a14de88.png "
+                  width="85"
+                  height="85"
+                />
+                <img
+                  class="features-img"
+                  src="/clearpacket/assets/features-img1-mob-7a14de88.png"
+                  alt="Screenshot of the game"
+                  width="85"
+                  height="85"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="features-item-text-wrapper">
+                <h3 class="features-item-title">Simple, Fun, and Addictive:</h3>
+                <p class="features-item-text">
+                  Anyone can figure out the drag-and-drop thing pretty quick.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide features-list-item">
+            <div class="features-item-bg"></div>
+            <div class="features-item-content-wrapper">
+              <picture>
+                <source
+                  srcset="/clearpacket/assets/features-img2-desk-b830f1d9.png "
+                  media="(min-width: 1440px)"
+                  width="137"
+                  height="137"
+                />
+                <source
+                  srcset="/clearpacket/assets/features-img2-mob-c9ebd7a1.png "
+                  width="85"
+                  height="85"
+                />
+                <img
+                  class="features-img"
+                  src="/clearpacket/assets/features-img2-mob-c9ebd7a1.png"
+                  alt="Screenshot of the game"
+                  width="85"
+                  height="85"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="features-item-text-wrapper">
+                <h3 class="features-item-title">Offline Playable:</h3>
+                <p class="features-item-text">
+                  No internet required! Play anytime, anywhere.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide features-list-item">
+            <div class="features-item-bg"></div>
+            <div class="features-item-content-wrapper">
+              <picture>
+                <source
+                  srcset="/clearpacket/assets/features-img3-desk-80e9b836.png "
+                  media="(min-width: 1440px)"
+                  width="137"
+                  height="137"
+                />
+                <source
+                  srcset="/clearpacket/assets/features-img3-mob-a5c5c579.png "
+                  width="85"
+                  height="85"
+                />
+                <img
+                  class="features-img"
+                  src="/clearpacket/assets/features-img3-mob-a5c5c579.png"
+                  alt="Screenshot of the game"
+                  width="85"
+                  height="85"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="features-item-text-wrapper">
+                <h3 class="features-item-title">Improves Logic & Reflexes:</h3>
+                <p class="features-item-text">
+                  Reminds me of sudoku mixed with Tetris, except it actually
+                  looks cool
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide features-list-item">
+            <div class="features-item-bg"></div>
+            <div class="features-item-content-wrapper">
+              <picture>
+                <source
+                  srcset="/clearpacket/assets/features-img4-desk-c4303195.png "
+                  media="(min-width: 1440px)"
+                  width="137"
+                  height="137"
+                />
+                <source
+                  srcset="/clearpacket/assets/features-img4-mob-48cad5a1.png "
+                  width="85"
+                  height="85"
+                />
+                <img
+                  class="features-img"
+                  src="/clearpacket/assets/features-img4-mob-48cad5a1.png"
+                  alt="Screenshot of the game"
+                  width="85"
+                  height="85"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="features-item-text-wrapper">
+                <h3 class="features-item-title">Vibrant, Soothing Colors:</h3>
+                <p class="features-item-text">
+                  Those neon blocks are trippy - bright enough to light up your
+                  whole room but somehow still relaxing?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide features-list-item">
+            <div class="features-item-bg"></div>
+            <div class="features-item-content-wrapper">
+              <picture>
+                <source
+                  srcset="/clearpacket/assets/features-img5-desk-056e7c90.png "
+                  media="(min-width: 1440px)"
+                  width="137"
+                  height="137"
+                />
+                <source
+                  srcset="/clearpacket/assets/features-img5-mob-783e5d7e.png "
+                  width="85"
+                  height="85"
+                />
+                <img
+                  class="features-img"
+                  src="/clearpacket/assets/features-img5-mob-783e5d7e.png"
+                  alt="Screenshot of the game"
+                  width="85"
+                  height="85"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="features-item-text-wrapper">
+                <h3 class="features-item-title">Free to Play:</h3>
+                <p class="features-item-text">
+                  Download and start playing right away without spending a
+                  penny.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="controls features-controls">
+        <button
+          class="arrow-btn"
+          id="featuresLeftArrow"
+          aria-label="Previous slide"
+        >
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/clearpacket/assets/sprite-64b35890.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <div class="dots">
+          <div class="features-dot active"></div>
+          <div class="features-dot"></div>
+          <div class="features-dot"></div>
+        </div>
+        <button
+          class="arrow-btn"
+          id="featuresRightArrow"
+          aria-label="Next slide"
+        >
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="/clearpacket/assets/sprite-64b35890.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <p class="features-bottom-text">
+        With hundreds of levels and endless fun, it’s the perfect game to unwind
+        and challenge yourself!
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="about-section section" id="about">
+  <div class="about-section-wrapper">
+    <div class="container about-container">
+      <h2 class="section-title about-title">
+        The Challenge Grows with Each Level
+      </h2>
+      <p class="about-top-text">
+        The further you get, the more you'll need to plan your moves - no more
+        just winging it. With every new level, the puzzles become more complex,
+        requiring careful planning and strategy to solve.
+      </p>
+      <ul class="about-list">
+        <li class="about-list-item">
+          <div class="about-item-bg"></div>
+          <div class="about-item-content-wrapper">
+            <picture>
+              <source
+                srcset="/clearpacket/assets/about-img1-desk-25a16469.png "
+                media="(min-width: 1440px)"
+                width="84"
+                height="84"
+              />
+              <source
+                srcset="data:image/png;base64,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 "
+                width="56"
+                height="56"
+              />
+              <img
+                class="about-img"
+                src="data:image/png;base64,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"
+                alt="Screenshot of the game"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+            </picture>
+            <div class="about-item-text-wrapper">
+              <h3 class="about-item-title">Unlock New Stages:</h3>
+              <p class="about-item-text">
+                New levels keep coming and some are just mean. Like, did I
+                actually get good at this or was I just lucky before?
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="about-list-item">
+          <div class="about-item-bg"></div>
+          <div class="about-item-content-wrapper">
+            <picture>
+              <source
+                srcset="/clearpacket/assets/about-img2-desk-1151b1a1.png "
+                media="(min-width: 1440px)"
+                width="84"
+                height="84"
+              />
+              <source
+                srcset="/clearpacket/assets/about-img2-mob-c83cdbdd.png "
+                width="56"
+                height="56"
+              />
+              <img
+                class="about-img"
+                src="/clearpacket/assets/about-img2-mob-c83cdbdd.png"
+                alt="Screenshot of the game"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+            </picture>
+            <div class="about-item-text-wrapper">
+              <h3 class="about-item-title">Timed Challenges & Boosters:</h3>
+              <p class="about-item-text">
+                Take on time-limited levels for bonus rewards, or use in-game
+                boosters to clear more blocks
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="about-bottom-list">
+        <li class="about-bottom-list-item">
+          <div class="about-item-bg"></div>
+          <div class="about-item-content-wrapper">
+            <svg class="about-icon" width="60" height="60">
+              <use href="/clearpacket/assets/sprite-64b35890.svg#icon-features1"></use>
+            </svg>
+            <p class="about-bottom-item-text">
+              Exciting challenges and the satisfaction of mastering each level
+            </p>
+          </div>
+        </li>
+        <li class="about-bottom-list-item">
+          <div class="about-item-bg"></div>
+          <div class="about-item-content-wrapper">
+            <svg class="about-icon" width="60" height="60">
+              <use href="/clearpacket/assets/sprite-64b35890.svg#icon-features2"></use>
+            </svg>
+            <p class="about-bottom-item-text">
+              Unlock new patterns and block combinations for even more fun
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section cta-section" id="cta">
+  <div class="cta-bg-wrapper">
+    <div class="container cta-container">
+      <div class="cta-content-wrapper">
+        <div class="cta-text-wrapper">
+          <h2 class="section-title cta-title">
+            Relax, Solve, and Enjoy the Glow
+          </h2>
+          <p class="cta-text">
+            You should try it if you're into this stuff. But seriously, don't
+            come crying to me when it's 2am and you're still playing. Anyway, if
+            you're into puzzle games, you should probably check it out. It's
+            free and those neon blocks are pretty mesmerizing.
+          </p>
+          <a
+            class="cta-btn"
+            target="_blank"
+            href="https://play.google.com/store/apps/details?id=com.serialcloud.cleargrid"
+            rel="noopener noreferrer"
+            aria-label="Download on Google Play"
+            >Download Now</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="footer-bg-wrapper">
+    <div class="container footer-container">
+      <div class="footer-content-wrapper">
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a class="footer-link" href="./privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-link" href="./terms-and-conditions.html"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="footer-text">© 2026 All rights reserved clearpacket.space</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
