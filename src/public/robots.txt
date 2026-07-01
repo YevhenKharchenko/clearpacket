@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://windtrail.pro/sitemap.xml
+Sitemap: https://clearpacket.space/sitemap.xml
